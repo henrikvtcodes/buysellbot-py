@@ -1,4 +1,5 @@
 from envs import env
+import json
 
 from coinbase.wallet.client import Client
 
@@ -12,3 +13,9 @@ except:
 else:
     client = Client(key, secret)
 
+def getCurrentUserData(returnType):
+    userObj = json.loads(client.get_current_user())
+    print(userObj)
+
+# def buy(coin, amount):
+    

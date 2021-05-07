@@ -1,0 +1,27 @@
+---
+baseConfig: # base configuration parameters for the bot
+  - currency: USD # Your preferred local FIAT currency
+
+  - notifications: # What should the bot notify you about
+    - checking: True # Bot sending request
+    - buy: True # Bot buying
+    - sell: True # Bot selling
+    - error: True # Trade failures
+  - maxHold: 100 # Maximum account value at one time,
+---
+
+---
+coins:
+  example: # "example" should be replaced with a sequential number
+    - announceName: Bitcoin # What name should the bot use when notifying about this coin
+    - coin: BTC # What is the coinbase coin ID
+    - maxHold: 69 # Maximum amount in {currency} that you should hold at one time, accepts dollar values
+
+    - buy: True # Is the bot allowed to buy
+    - buyAt: 42000 # what price should the bot buy at
+    - buyAmt: 10 # how much should the bot buy at one time, accepts dollar values only
+
+    - sell: True # Is the bot allowed to sell
+    - sellAt: 69000 # what unit price should the bot sell at
+    - sellAmt: 15% # how much should the bot sell at one time, accepts dollar and percent values
+---

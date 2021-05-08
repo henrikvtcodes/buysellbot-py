@@ -1,5 +1,6 @@
-import cb-trader
+print('Starting script...')
 
-import
+import cb_trader as cb
 
-print("Hi. I am the main file.")
+print('Welcome to BuySellBot!')
+print('Current User:')

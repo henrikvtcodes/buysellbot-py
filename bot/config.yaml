@@ -18,7 +18,7 @@ baseConfig: # base configuration parameters for the bot
   - maxBuy: 20 # How much money the bot will spend on one purchase at one time
   - maxSell: Null # How much the bot will sell at one time, leave as null if you wish to not cap this
 ---
-coins:
+coinConfig:
   example: # "example" should be replaced with a sequential number
     - announceName: Bitcoin # What name should the bot use when notifying about this coin
     - coin: BTC # What is the coinbase coin ID

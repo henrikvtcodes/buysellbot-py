@@ -1,3 +1,10 @@
+#BuySellBot CONFIGURATION FILE
+# Use this file to configure the behavior of this bot.
+#
+# ---------- KEY ----------
+# Dollar Value: 1 (does not use dollar sign)
+# Percent Value: 69% (uses percent sign)
+
 ---
 baseConfig: # base configuration parameters for the bot
   - currency: USD # Your preferred local FIAT currency

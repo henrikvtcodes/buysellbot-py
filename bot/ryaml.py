@@ -3,7 +3,7 @@
 import yaml
 
 def openYaml(yml='config.yaml'):
-    f = open(yml, "r")
+    f = open(yml, 'r')
     config = yaml.load_all(f, Loader=yaml.Loader)
     return config
 
@@ -12,31 +12,33 @@ global coin
 baseConfig = 'Empty'
 coins = 'Empty'
 
-# def baseConfig():    
-#     config=openYaml()
-#     vrs()
-#     
-#     for doc in config:
-#         if  vrs.baseConfig=='Empty':
-#             baseConfig=doc
-#             break
-#         
-#     return baseConfig
-# 
-# def coinConfig():    
-#     config=openYaml()
-#     vrs()
-#     
-#     for doc in config:
-#         if vrs.baseConfig=='Empty':
-#             baseConfig=doc
-#             break
-#         elif vrs.coins=='Empty':
-#             coins=doc
-#             break
-#         
-#     return coins
-# 
-# print(coinConfig())
-# print()
-# print(baseConfig())
+config = openYaml()
+for doc in config:
+    print()
+    print(doc.items())
+    # baseConfig = doc.get('baseConfig')
+    # print(baseConfig)
+
+def baseConfig():    
+    config=openYaml()
+    
+    for doc in config:      
+        baseConfig = doc.get('baseConfig')
+        if baseConfig!=None:
+            break
+    return baseConfig
+
+def coinConfig():    
+    config=openYaml()
+    
+    for doc in config:      
+        coinConfig = doc.get('coinConfig')
+        if coinConfig!=None:
+            break
+    return coinConfig
+  
+
+
+print(coinConfig())
+print()
+print(baseConfig())

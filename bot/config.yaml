@@ -30,6 +30,8 @@ coins:
     - buyAmt: 10 # how much should the bot buy at one time, accepts dollar values only
 
     - sell: True # Is the bot allowed to sell
-    - sellAt: 69000 # what unit price should the bot sell at
-    - sellAmt: 15% # how much should the bot sell at one time, accepts dollar and percent values
+    - sellAtHigh: 69000 # sell if coin value goes above this number
+    - sellAmtHigh: 15% # how much should the bot sell at one time, accepts dollar and percent values
+    - sellAtLow: 40000 # sell if coin value drops below this number
+    - sellAmtLow: 100% # how much should the bot sell at one time, accepts percent values
 ---

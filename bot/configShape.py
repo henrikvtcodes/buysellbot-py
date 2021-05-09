@@ -5,15 +5,19 @@
     [
     {'currency': 'USD'}, 
     {'notifications': 
-        [{'checking': True}, 
+        [
+        {'checking': True}, 
         {'buy': True}, 
         {'sell': True}, 
         {'error': True}, 
-        {'misc': True}]}, 
+        {'misc': True}
+        ]
+        }, 
     {'maxHold': 100}, 
     {'maxBuy': 20}, 
     {'maxSell': None}
-    ], 
+    ],
+     
 'coins': 
     {'example': 
         [

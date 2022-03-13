@@ -1,5 +1,6 @@
 # `buysellbot-py`
-#### PLEASE NOTE: If you lose money after using this bot, that's your fault, not mine.
+#### DISCLAIMER: I am not liable for any loss if you decide to use any of this code for actual financial operations. P.S. You really shouldn't.  
+
 **This bot is set up for Coinbase.**  
 Just a shitty python crypto trading bot for some friends
 
